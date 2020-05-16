@@ -9,7 +9,8 @@ function palindromeChecker(tagID){
 
     //check there is a input
     if (input) {
-        let clearedInputString = input.replace(/[\W_]/g,''); // replace not-words and underscopes
+        // replace not-words (ENG and RUS) and not-digits
+        let clearedInputString = input.replace(/[^A-Za-zА-Яа-я0-9]/g,''); 
         let forwardString = clearedInputString.toLowerCase();
         let backwardString = clearedInputString.split('').reverse().join('').toLowerCase();
 
