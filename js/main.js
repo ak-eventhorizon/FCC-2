@@ -1,7 +1,7 @@
 'use strict';
 
 import {palindromeChecker} from './modules/palindromeChecker.js';
-
+import {romanConverter} from './modules/romanConverter.js';
 
 
 let btnPalindromeCheck = document.getElementById('palindrome_button');

@@ -14,7 +14,13 @@ You'll need to remove all non-alphanumeric characters (punctuation, spaces and s
 
 ## 2 - Roman Numeral Converter
 
-*ToDo*
+### Test Case:
+
+Convert the given number into a roman numeral.
+
+***Note:***
+
+All roman numerals answers should be provided in upper-case.
 
 ## 3 - Caesars Cipher
 

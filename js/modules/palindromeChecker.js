@@ -1,7 +1,7 @@
 'use strict';
 
-// INPUT - input tag id that value need to check for palindrome
-// OUTPUT - boolean
+// IN - <input> tag id that value need to check for palindrome
+// OUT - boolean
 
 function palindromeChecker(tagID){
 
