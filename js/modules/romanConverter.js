@@ -10,6 +10,8 @@ function romanConverter(num){
         console.log(err);
     }
 
+    return num;
+
 }
 
 

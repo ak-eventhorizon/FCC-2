@@ -3,7 +3,7 @@
 import {palindromeChecker} from './modules/palindromeChecker.js';
 import {romanConverter} from './modules/romanConverter.js';
 
-
+/*************** Palindrome Checker ***************/
 
 let inputPalindromeCheck = document.getElementById('palindrome_input');
 let btnPalindromeCheck = document.getElementById('palindrome_button');
@@ -17,4 +17,15 @@ btnPalindromeCheck.onclick = function(){
     } else {
         resultPalindromeCheck.innerHTML = 'not palindrome';
     }
+};
+
+/*************** Roman Converter ***************/
+
+let inputRomanConverter = document.getElementById('roman_converter_input');
+let btnRomanConverter = document.getElementById('roman_converter_button');
+let resultRomanConverter = document.getElementById('roman_converter_result');
+
+btnRomanConverter.onclick = function(){
+    let convertedNumber = romanConverter(+inputRomanConverter.value);
+    resultRomanConverter.innerHTML = convertedNumber;
 };

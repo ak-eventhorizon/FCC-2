@@ -18,6 +18,10 @@ You'll need to remove all non-alphanumeric characters (punctuation, spaces and s
 
 Convert the given number into a roman numeral.
 
+| Symbol | I | V |  X |  L |  C  |  D  |   M  |
+|:------:|:-:|:-:|:--:|:--:|:---:|:---:|:----:|
+|  Value | 1 | 5 | 10 | 50 | 100 | 500 | 1000 |
+
 ***Note:***
 
 All roman numerals answers should be provided in upper-case.
