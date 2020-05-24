@@ -66,9 +66,9 @@ For this challenge you will be presented with a string such as 800-692-7753 or 8
 
 ## 5 - Cash Register
 
-Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument.
+Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (CID) as the third argument.
 
-(cid) is a 2D array listing available currency.
+CID is a 2D array listing available currency.
 
 |    Currency Unit    |       Amount       |
 |:-------------------:|:------------------:|
