@@ -22,10 +22,9 @@ btnPalindromeCheck.onclick = function(){
 /*************** Roman Converter ***************/
 
 let inputRomanConverter = document.getElementById('roman_converter_input');
-let btnRomanConverter = document.getElementById('roman_converter_button');
 let resultRomanConverter = document.getElementById('roman_converter_result');
 
-btnRomanConverter.onclick = function(){
+inputRomanConverter.oninput = function(){
     let convertedNumber = romanConverter(+inputRomanConverter.value);
     resultRomanConverter.innerHTML = convertedNumber;
 };
