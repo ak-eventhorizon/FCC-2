@@ -2,6 +2,7 @@
 
 import {palindromeChecker} from './modules/palindromeChecker.js';
 import {romanConverter} from './modules/romanConverter.js';
+import {caesarsCipher} from './modules/caesarsCipher.js';
 
 /*************** Palindrome Checker ***************/
 
@@ -27,4 +28,15 @@ let resultRomanConverter = document.getElementById('roman_converter_result');
 inputRomanConverter.oninput = function(){
     let convertedNumber = romanConverter(+inputRomanConverter.value);
     resultRomanConverter.innerHTML = convertedNumber;
+};
+
+/*************** Caesars Cipher ***************/
+
+let inputCipher = document.getElementById('cipher_input');
+let btnCipher = document.getElementById('cipher_button');
+let resultCipher = document.getElementById('cipher_result');
+
+btnCipher.onclick = function(){
+    let decodedString = caesarsCipher(inputCipher.value);
+    resultCipher.innerHTML = decodedString;
 };
