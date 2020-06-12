@@ -3,6 +3,7 @@
 import {palindromeChecker} from './modules/palindromeChecker.js';
 import {romanConverter} from './modules/romanConverter.js';
 import {caesarsCipher} from './modules/caesarsCipher.js';
+import {telephoneValidator} from './modules/telephoneValidator.js';
 
 /*************** Palindrome Checker ***************/
 
@@ -11,9 +12,9 @@ let btnPalindromeCheck = document.getElementById('palindrome_button');
 let resultPalindromeCheck = document.getElementById('palindrome_result');
 
 btnPalindromeCheck.onclick = function(){
-    let checkResult = palindromeChecker(inputPalindromeCheck.value);
+    let result = palindromeChecker(inputPalindromeCheck.value);
 
-    if (checkResult){
+    if (result){
         resultPalindromeCheck.innerHTML = 'PALINDROME!';
     } else {
         resultPalindromeCheck.innerHTML = 'not palindrome';
@@ -39,4 +40,20 @@ let resultCipher = document.getElementById('cipher_result');
 btnCipher.onclick = function(){
     let decodedString = caesarsCipher(inputCipher.value);
     resultCipher.innerHTML = decodedString;
+};
+
+/*************** Telephone Number Validator ***************/
+
+let inputTelephone = document.getElementById('telephone_input');
+let btnTelephone = document.getElementById('telephone_button');
+let resultTelephone = document.getElementById('telephone_result');
+
+btnTelephone.onclick = function(){
+    let result = telephoneValidator(inputTelephone.value);
+
+    if (result){
+        resultTelephone.innerHTML = 'NUMBER IS VALID';
+    } else {
+        resultTelephone.innerHTML = 'NUMBER NOT VALID';
+    }
 };
