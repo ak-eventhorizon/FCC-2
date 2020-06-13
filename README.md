@@ -104,7 +104,7 @@ Return
 if cash-in-drawer is less than the change due, or if you cannot return the exact change.
 
 Return  
-```JavaSctipt
+```JavaScript
 {
     status: "CLOSED", 
     change: [...]
