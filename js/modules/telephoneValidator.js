@@ -6,7 +6,8 @@
 function telephoneValidator(str){
 
     let inputStr = str;
-    let telephoneRegex = /^(1\s?)?((\([0-9]{3}\)\s?)|([0-9]{3}-?\s?))([0-9]{3}\s?-?)([0-9]{2}\s?-?[0-9]{2})$/g;
+    let telephoneRegex = 
+    /^(1\s?)?((\([0-9]{3}\)\s?)|([0-9]{3}-?\s?))([0-9]{3}\s?-?)([0-9]{2}\s?-?[0-9]{2})$/g;
 
     let validationResult = telephoneRegex.test(inputStr);
     

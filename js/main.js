@@ -45,10 +45,9 @@ btnCipher.onclick = function(){
 /*************** Telephone Number Validator ***************/
 
 let inputTelephone = document.getElementById('telephone_input');
-let btnTelephone = document.getElementById('telephone_button');
 let resultTelephone = document.getElementById('telephone_result');
 
-btnTelephone.onclick = function(){
+inputTelephone.oninput = function(){
     let result = telephoneValidator(inputTelephone.value);
 
     if (result){
