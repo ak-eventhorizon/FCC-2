@@ -3,9 +3,9 @@
 // IN - 
 // OUT - 
 
-function cashRegister(){
+function checkCashRegister(){
 
     return true;
 }
 
-export {cashRegister};
+export {checkCashRegister};
