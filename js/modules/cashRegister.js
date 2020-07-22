@@ -5,7 +5,12 @@
 
 function checkCashRegister(){
 
-    return true;
+    let outputObj = {
+        status: undefined,
+        change: undefined
+    };
+
+    return outputObj;
 }
 
 export {checkCashRegister};
