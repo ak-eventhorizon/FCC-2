@@ -4,7 +4,7 @@ import {palindromeChecker} from './modules/palindromeChecker.js';
 import {romanConverter} from './modules/romanConverter.js';
 import {caesarsCipher} from './modules/caesarsCipher.js';
 import {telephoneValidator} from './modules/telephoneValidator.js';
-import {checkCashRegister} from './modules/cashRegister.js';
+import {checkCashRegister} from './modules/checkCashRegister.js';
 
 /*************** Palindrome Checker ***************/
 
@@ -57,3 +57,7 @@ inputTelephone.oninput = function(){
         resultTelephone.innerHTML = 'NUMBER NOT VALID';
     }
 };
+
+/*************** Check Cash Register ***************/
+
+// ToDo
