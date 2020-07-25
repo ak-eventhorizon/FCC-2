@@ -1,9 +1,9 @@
 'use strict';
 
-// IN - 
-// OUT - 
+// IN - (price, paymentInCash, changeInDrawer)
+// OUT - object { status: "STATUS", change: [...] }
 
-function checkCashRegister(){
+function checkCashRegister(price, paymentInCash, changeInDrawer){
 
     let outputObj = {
         status: undefined,
