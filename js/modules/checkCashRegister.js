@@ -1,6 +1,9 @@
 'use strict';
 
-// IN - (price, paymentInCash, changeInDrawer)
+// IN - purchase price as the first argument (price),
+// payment as the second argument (paymentInCash), 
+// and cash-in-drawer (changeInDrawer) as the third argument
+
 // OUT - object { status: "STATUS", change: [...] }
 
 function checkCashRegister(price, paymentInCash, changeInDrawer){
