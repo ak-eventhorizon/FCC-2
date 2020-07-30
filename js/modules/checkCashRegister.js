@@ -5,7 +5,6 @@
 // and cash-in-drawer (changeInDrawer) as the third argument
 
 // OUT - object { status: "STATUS", change: [...] }
-//
 
 function checkCashRegister(price, paymentInCash, changeInDrawer){
 
