@@ -11,6 +11,11 @@
 	box-sizing: border-box;
 }
 
+/*************************** CASH REGISTER STYLES ***************************/
+
+#cash_register {
+	margin: 0;
+}
 
 
 

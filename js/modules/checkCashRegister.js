@@ -29,3 +29,8 @@ function checkCashRegister(price, paymentInCash, changeInDrawer){
 }
 
 export {checkCashRegister};
+
+/*************** Check Cash Register ***************/
+
+// TODO - Сделать отдельную страницу с графическим представлением кассового аппарата:
+// поля с ценой и внесенной суммой, выдвижной лоток с купюрами и монетами
