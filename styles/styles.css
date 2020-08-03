@@ -14,7 +14,10 @@
 /*************************** CASH REGISTER STYLES ***************************/
 
 #cash_register {
-	margin: 0;
+	margin: auto;
+    background-color: grey;
+    width: 90vmin;
+    height: 90vmin;
 }
 
 
