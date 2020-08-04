@@ -13,13 +13,47 @@
 
 /*************************** CASH REGISTER STYLES ***************************/
 
-#cash_register {
+#app {
 	margin: auto;
-    background-color: grey;
-    width: 90vmin;
-    height: 90vmin;
+    width: 100vmin;
+	height: 100vmin;
 }
 
+.client_pocket {
+	height: 20%;
+
+    background-color: #4caf5050;
+}
+
+.info {
+	height: 15%;
+
+    background-color: #607d8b50;
+}
+
+.controls {
+	height: 10%;
+
+    background-color: #9c27b050;
+}
+
+.change {
+	height: 20%;
+
+    background-color: #03a9f450;
+}
+
+.status {
+	height: 15%;
+
+    background-color: #f4433650;
+}
+
+.cash_register {
+	height: 20%;
+
+    background-color: #cddc3950;
+}
 
 
 
