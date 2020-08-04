@@ -21,8 +21,41 @@
 
 .client_pocket {
 	height: 20%;
+	text-align: center;
 
-    background-color: #4caf5050;
+	display: grid;
+    grid-template-rows: auto 1fr;
+
+    background-color: #8bc34a30;
+}
+
+.client_pocket h2 {
+	margin: 1vmin;
+	font-size: 3vmin;
+}
+
+.client_pocket .cash {
+	display: grid;
+    grid-template-columns: repeat(9, 1fr);
+	gap: 1vmin;
+
+	margin: 1vmin;
+}
+
+.client_pocket .cash .cell {
+	display: grid;
+	align-items: center;
+
+	font-size: 3vmin;
+	border-radius: 1vmin;
+
+	cursor: pointer;
+	
+	background-color: #4caf5050;
+}
+
+.client_pocket .cash .cell:hover {
+	background-color: #4caf5070;
 }
 
 .info {
