@@ -112,21 +112,61 @@ h2 {
 	border-radius: 3vmin;
 	box-shadow: 0px 0px 3px 1px;
 
-	background-color: #00bcd4;
+	background-color: #ff9800;
 }
 
 .controls .button:hover {
-	background-color: #04aec3;
+	background-color: #e48a06;
 }
 
 .change {
-	height: 20%;
+	height: 25%;
+	text-align: center;
+
+	display: grid;
+    grid-template-rows: auto 1fr;
 
     background-color: #03a9f450;
 }
 
+.change .summary {
+    font-size: 4vmin;
+}
+
+.change .summary input {
+	width: 25%;
+	margin: 1vmin;
+    border-radius: 1vmin;
+    border: 2px solid black;
+    text-decoration: none;
+    text-align: right;
+    font-size: 4vmin;
+    background-color: #ffffff;
+}
+
+.change .cash {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: 2fr 1fr;
+    gap: 0.5vmin;
+    margin: 1vmin;
+}
+
+.change .cash div {
+	display: grid;
+    align-items: center;
+    font-size: 3.4vmin;
+	border-radius: 1vmin;
+	
+	background-color: #00bcd4;
+}
+
+.change .cash .quantity {
+	font-weight: bold;
+}
+
 .status {
-	height: 15%;
+	height: 10%;
 
     background-color: #f4433650;
 }
