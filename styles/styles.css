@@ -32,8 +32,6 @@ h2 {
 
 	display: grid;
     grid-template-rows: auto 1fr;
-
-    background-color: #8bc34a30;
 }
 
 .client_pocket .cash {
@@ -66,8 +64,6 @@ h2 {
 	display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1vmin;
-
-    background-color: #607d8b50;
 }
 
 .info > div {
@@ -100,8 +96,6 @@ h2 {
 	height: 10%;
 
 	display: grid;
-
-    background-color: #dff2f5;
 }
 
 .controls .button {
@@ -129,8 +123,6 @@ h2 {
 
 	display: grid;
     grid-template-rows: auto 1fr;
-
-    background-color: #03a9f450;
 }
 
 .change .summary {
@@ -184,8 +176,6 @@ h2 {
     align-items: center;
     padding: 1vmin;
 	font-size: 4vmin;
-
-    background-color: #f4433650;
 }
 
 .status label {
@@ -211,8 +201,6 @@ h2 {
 	text-align: center;
     display: grid;
     grid-template-rows: auto 1fr;
-
-    background-color: #9c27b01c;
 }
 
 .cash_register .cash {
