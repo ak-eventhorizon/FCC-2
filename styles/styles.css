@@ -73,6 +73,7 @@ h2 {
 .info > div {
 	display: grid;
 	grid-template-rows: auto 1fr;
+	align-items: center;
 }
 
 .info label {
@@ -92,6 +93,7 @@ h2 {
 
 .info input[disabled] {
 	background-color: #4caf5020;
+	cursor: not-allowed;
 }
 
 .controls {
@@ -148,6 +150,7 @@ h2 {
     text-align: right;
 	font-size: 4vmin;
 	font-weight: bold;
+	cursor: not-allowed;
 
 	background-color: #00bcd420;
 }
@@ -176,7 +179,30 @@ h2 {
 .status {
 	height: 10%;
 
+	display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1vmin;
+	font-size: 4vmin;
+
     background-color: #f4433650;
+}
+
+.status label {
+	font-weight: bold;
+}
+
+.status input {
+	margin: 1vmin;
+    border-radius: 1vmin;
+    border: 2px solid black;
+    text-decoration: none;
+    text-align: center;
+	font-size: 4vmin;
+	font-weight: bold;
+	cursor: not-allowed;
+
+	background-color: #fbf3ad70;
 }
 
 .cash_register {
