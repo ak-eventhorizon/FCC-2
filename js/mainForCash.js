@@ -9,6 +9,8 @@ paymentField.value = 0;
 
 let priceField = document.querySelector('#price_field');
 
+let actionButton = document.querySelector('#action_button');
+
 let cashRegisterSum = 0;
 let cashRegisterContent = new Map([
     [100,10],
@@ -68,10 +70,18 @@ function calculateMapSum(value, key, map){
     let multiple = key * map.get(key);
     cashRegisterSum += multiple;
 }
-
 cashRegisterContent.forEach(calculateMapSum);
 
 
+
+actionButton.addEventListener('click', () => {
+    console.log('Payment:');
+    console.log(paymentFromClient);
+    console.log('Change:');
+    console.log(changeToClient);
+    console.log('CashRegister:');
+    console.log(cashRegisterContent);
+})
 
 
 
