@@ -81,6 +81,8 @@ actionButton.addEventListener('click', () => {
     console.log(changeToClient);
     console.log('CashRegister:');
     console.log(cashRegisterContent);
+    console.log('Price Field Value:');
+    console.log(parseFloat(priceField.value).toFixed(2));
 })
 
 
