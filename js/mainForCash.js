@@ -24,7 +24,7 @@ const payment = {
             result += multiple;
         }
         this.content.forEach(calculateMapElement);
-        return result;
+        return result.toFixed(2);
     }
 };
 
@@ -48,7 +48,7 @@ const change = {
             result += multiple;
         }
         this.content.forEach(calculateMapElement);
-        return result;
+        return result.toFixed(2);
     }
 };
 
@@ -72,7 +72,7 @@ const register = {
             result += multiple;
         }
         this.content.forEach(calculateMapElement);
-        return result;
+        return result.toFixed(2);
     }
 };
 
