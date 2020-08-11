@@ -86,6 +86,8 @@ const ui = {
 ui.payment.value = 0;
 ui.price.value = 0;
 
+
+
 // event listeners on Client Pocket buttons
 for (let element of ui.clientButtons) {
     element.addEventListener('click', function () {
