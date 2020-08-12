@@ -81,15 +81,24 @@ const ui = {
     price: document.querySelector('#price_field'),
     change: document.querySelector('#change_field'),
     status: document.querySelector('#status_field'),
-    mainButton: document.querySelector('#action_button'),
+
     clientButtons: document.querySelectorAll('div.client_pocket > div.cash > div.cell'),
+    mainButton: document.querySelector('#action_button'),
 
     resetPayment: function (){
         this.payment.value = '0.00';
     },
     resetPrice: function (){
         this.price.value = '0.00';
-    }
+    },
+    refreshRegisterCells: function(){
+        // тут должен быть метод, заполняющий отображение ячеек cash register'а в 
+        // соответствии с мапом register
+    },
+    refreshChangeCells: function(){
+        // тут должен быть метод, заполняющий отображение ячеек change'а в 
+        // соответствии с мапом change
+    },
 };
 
 ui.resetPayment();
