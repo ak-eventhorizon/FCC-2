@@ -79,23 +79,31 @@ const register = {
 const ui = {
     payment: document.querySelector('#payment_field'),
     price: document.querySelector('#price_field'),
+    change: document.querySelector('#change_field'),
+    status: document.querySelector('#status_field'),
     mainButton: document.querySelector('#action_button'),
     clientButtons: document.querySelectorAll('div.client_pocket > div.cash > div.cell'),
+
+    resetPayment: function (){
+        this.payment.value = '0.00';
+    },
+    resetPrice: function (){
+        this.price.value = '0.00';
+    }
 };
 
-ui.payment.value = 0;
-ui.price.value = 0;
+ui.resetPayment();
+ui.resetPrice();
 
 
 
-// event listeners on Client Pocket buttons
 for (let element of ui.clientButtons) {
     element.addEventListener('click', function () {
         // подсчет и вывод поля Payment
         let result = parseFloat(ui.payment.value) + parseFloat(element.innerHTML);
         ui.payment.value = result.toFixed(2);
 
-        // заполнение Map'a payment.content
+        // инкремент определенного Map'a из payment.content (плюс одна купюра)
         let currentQuantity = payment.content.get(+element.innerHTML);
         payment.content.set(+element.innerHTML, ++currentQuantity);
     });
