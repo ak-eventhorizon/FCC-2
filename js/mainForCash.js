@@ -59,8 +59,8 @@ const register = {
         [10,30],
         [5,30],
         [1,50],
-        [0.25,80],
-        [0.1,80],
+        [0.25,50],
+        [0.1,50],
         [0.05,50],
         [0.01,50]
     ]),
@@ -85,24 +85,42 @@ const ui = {
     clientButtons: document.querySelectorAll('div.client_pocket > div.cash > div.cell'),
     mainButton: document.querySelector('#action_button'),
 
+    changeQuantityCells: document.querySelectorAll('div.change div.quantity'),
+    registerQuantityCells: document.querySelectorAll('div.cash_register div.quantity'),
+
     resetPayment: function (){
         this.payment.value = '0.00';
     },
     resetPrice: function (){
         this.price.value = '0.00';
     },
-    refreshRegisterCells: function(){
-        // тут должен быть метод, заполняющий отображение ячеек cash register'а в 
-        // соответствии с мапом register
-    },
     refreshChangeCells: function(){
-        // тут должен быть метод, заполняющий отображение ячеек change'а в 
+        // метод, заполняющий ячейки с количеством купюр change в 
         // соответствии с мапом change
+        for (let element of this.changeQuantityCells) {
+            let currentRate = +element.id.split('_')[1]; // 100 , 20 .... 0.01
+            let currentQuantity = change.content.get(currentRate);
+
+            element.innerHTML = `x${currentQuantity}`;
+        }
     },
+    refreshRegisterCells: function(){
+        // метод, заполняющий ячейки с количеством купюр cash register в 
+        // соответствии с мапом register
+        for (let element of this.registerQuantityCells) {
+            let currentRate = +element.id.split('_')[1]; // 100 , 20 .... 0.01
+            let currentQuantity = register.content.get(currentRate);
+
+            element.innerHTML = `x${currentQuantity}`;
+        }
+    }
 };
 
 ui.resetPayment();
 ui.resetPrice();
+
+ui.refreshRegisterCells();
+ui.refreshChangeCells();
 
 
 
@@ -117,8 +135,6 @@ for (let element of ui.clientButtons) {
         payment.content.set(+element.innerHTML, ++currentQuantity);
     });
 }
-
-
 
 ui.mainButton.addEventListener('click', () => {
     console.log('Payment:');
