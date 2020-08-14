@@ -136,6 +136,29 @@ for (let element of ui.clientButtons) {
     });
 }
 
+
+
+function calculateChange() {
+    let paymentValue = +parseFloat(ui.payment.value).toFixed(2);
+    let priceValue = +parseFloat(ui.price.value).toFixed(2);
+    let neededChange = (paymentValue - priceValue).toFixed(2);
+
+    if (neededChange === 0) {
+        ui.status.value = "CHANGE DONT NEEDED (0$)";
+    } else if (neededChange < 0){
+        ui.status.value = "NOT ENOUGH PAYMENT";
+    } else {
+        ui.status.value = "CHANGE CALCULATED";
+        // тут считается сдача
+    }
+
+    console.log(`Payment value: ${paymentValue}`);
+    console.log(`Price value: ${priceValue}`);
+    console.log(neededChange);
+}
+
+
+
 ui.mainButton.addEventListener('click', () => {
     console.log('Payment:');
     console.log(payment.content);
@@ -149,8 +172,9 @@ ui.mainButton.addEventListener('click', () => {
     console.log(register.content);
     console.log('CashRegisterSum:');
     console.log(register.sum());
-    console.log('Price Field Value:');
-    console.log(parseFloat(ui.price.value).toFixed(2));
+
+    calculateChange();
+
 });
 
 
