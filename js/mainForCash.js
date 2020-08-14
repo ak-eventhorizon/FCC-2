@@ -137,7 +137,7 @@ for (let element of ui.clientButtons) {
 }
 
 
-
+// main calculate function
 function calculateChange() {
     let paymentValue = +parseFloat(ui.payment.value).toFixed(2);
     let priceValue = +parseFloat(ui.price.value).toFixed(2);
