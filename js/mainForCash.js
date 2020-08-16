@@ -142,7 +142,7 @@ for (let element of ui.clientButtons) {
 function calculateChange() {
     let paymentValue = +parseFloat(ui.payment.value).toFixed(2);
     let priceValue = +parseFloat(ui.price.value).toFixed(2);
-    let neededChange = (paymentValue - priceValue).toFixed(2);
+    let neededChange = +(paymentValue - priceValue).toFixed(2);
 
     if (neededChange === 0) {
         ui.status.value = "CHANGE DONT NEEDED (0$)";
@@ -155,7 +155,7 @@ function calculateChange() {
 
     console.log(`Payment value: ${paymentValue}`);
     console.log(`Price value: ${priceValue}`);
-    console.log(neededChange);
+    console.log(`Needed Change: ${neededChange}`);
 }
 
 
