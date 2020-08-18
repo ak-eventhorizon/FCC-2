@@ -138,7 +138,7 @@ for (let element of ui.clientButtons) {
 
 
 // main calculate function
-// TODO -- эта функция в итоге будет вынесена в отдельный модуль - checkCashRegister
+// TODO - эта функция в итоге будет вынесена в отдельный модуль - checkCashRegister
 function calculateChange() {
     let paymentValue = +parseFloat(ui.payment.value).toFixed(2);
     let priceValue = +parseFloat(ui.price.value).toFixed(2);
@@ -181,3 +181,20 @@ ui.mainButton.addEventListener('click', () => {
 
 
 checkCashRegister();
+
+
+
+
+
+
+
+let covidIsActive = true;
+let temperature = 38.5;
+let badDays = 4;
+
+if (covidIsActive && temperature >= 37) {
+    badDays++;
+    console.log(`Another bad day....`);
+} else {
+    console.log(`Woo-hoo!!!`);
+}
