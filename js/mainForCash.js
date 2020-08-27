@@ -190,7 +190,7 @@ checkCashRegister();
 
 let covidIsActive = true;
 let temperature = 37.5;
-let badDays = 12;
+let badDays = 13;
 
 if (covidIsActive && temperature >= 37) {
     badDays++;
