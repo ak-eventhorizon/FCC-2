@@ -181,20 +181,3 @@ ui.mainButton.addEventListener('click', () => {
 
 
 checkCashRegister();
-
-
-
-
-
-
-
-let covidIsActive = false;
-let temperature = 36.7;
-let badDays = 24;
-
-if (covidIsActive && temperature >= 37) {
-    badDays++;
-    console.log(`Another bad day....`);
-} else {
-    console.log(`Woo-hoo!!!`);
-}
