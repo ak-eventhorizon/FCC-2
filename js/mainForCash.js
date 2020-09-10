@@ -159,7 +159,8 @@ function calculateChange() {
 }
 
 
-
+// debugging console info
+// TODO - delete after app complete
 ui.mainButton.addEventListener('click', () => {
     console.log('Payment:');
     console.log(payment.content);
@@ -181,3 +182,9 @@ ui.mainButton.addEventListener('click', () => {
 
 
 checkCashRegister();
+
+// НА ПОДУМАТЬ: 
+// в существующей реализации некоторые элементы интерфейса являюся хранилищем и источником данных
+// (отсюда много parseFloat и приведений к числу...)
+// от этого необходимо избавиться, все данные должны храниться в переменных программы, а в интерфейс
+// передаваться только для отображения.
