@@ -2,8 +2,6 @@
 
 // need to refactor
 
-// OUT - object { status: "STATUS", change: [...] }
-
 function checkCashRegister(price, paymentInCash, changeInDrawer){
 
     let outputObj = {
