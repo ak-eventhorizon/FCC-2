@@ -190,3 +190,4 @@ checkCashRegister();
 // передаваться только для отображения.
 
 // relocation evening... still no inspiration....
+// second day of nothn... -_-
