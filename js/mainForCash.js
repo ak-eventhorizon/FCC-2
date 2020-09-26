@@ -190,3 +190,4 @@ checkCashRegister();
 // передаваться только для отображения.
 
 // SOOON!!!!
+// but today is dacha day...
